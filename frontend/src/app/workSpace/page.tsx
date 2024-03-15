@@ -12,7 +12,7 @@ import ReactFlow, {
   ConnectionLineType,
   Background,
 } from 'reactflow';
-import CustomNode from './CustomNode';
+import CustomNode from './components/organisms/CustomNode';
 import styles from './Flow.module.css';
 
 const initialNodes: Node[] = [
@@ -39,26 +39,23 @@ const initialNodes: Node[] = [
 	  type: 'custom',
 	  className: styles.customNode,
 	},
-  ];
+];
   
   const initialEdges: Edge[] = [
-	{ id: 'e1-2', source: '1', target: '2' },
-	{ id: 'e1-3', source: '1', target: '3' },
+		{ id: 'e1-2', source: '1', target: '2' },
+		{ id: 'e1-3', source: '1', target: '3' },
   ];
   
   const nodeTypes = {
-	custom: CustomNode,
+		custom: CustomNode,
   };
   
   const defaultEdgeOptions = {
-	animated: true,
-	type: 'smoothstep',
+		animated: true,
+		type: 'smoothstep',
   };
 
-
-
 export default function () {
-
 	const [nodes,, onNodesChange] = useNodesState(initialNodes);
 	const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 	const onConnect = useCallback(

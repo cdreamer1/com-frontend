@@ -49,7 +49,7 @@ const ProfileEditPage: React.FC = () => {
         </button>
     );
 
-    const Items = [
+    const items = [
         'Account',
         'Authentication',
         'Organizations',
@@ -103,7 +103,7 @@ const ProfileEditPage: React.FC = () => {
                         <span style={{ fontWeight: '500' }}>Profile</span>
                     </div>
                     {
-                        Items.map((item, index) => {
+                        items.map((item, index) => {
                             return <div key={index}>
                                 <div className="p-2 w-full cursor-pointer hover:bg-slate-400 hover:text-black">
                                     <span >{item}</span>

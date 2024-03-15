@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { PlayCircleOutlined } from "@ant-design/icons";
 import { Checkbox, Tag } from "antd";
 import classes from "./modal.module.css";
-import { modulesList } from "../../../../services/modules-service";
+import { modulesList } from "../../../../../services/modules-service";
 
 export default function ModuleDetailsModal({ name }: { name: string }) {
 

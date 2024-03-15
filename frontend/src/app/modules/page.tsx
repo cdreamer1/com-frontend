@@ -8,7 +8,7 @@ import ModuleItem from "@/components/molecules/module-item";
 import SearchBar from "@/components/molecules/search-bar/search-bar";
 
 const PolkadotWalletButton = dynamic(
-	() => import("@/components/atoms/polkadot-wallet-button"),
+	() => import("@/components/atoms/button/polkadot-wallet-button"),
 	{ ssr: false }
 );
 
