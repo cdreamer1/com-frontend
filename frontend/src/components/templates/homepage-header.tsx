@@ -174,10 +174,12 @@ export default function HomepageHeader() {
         duration-500
         `} 
     >
-      <img 
-        src="gif/logo/CubesShufflingGIF.gif" 
+      <Image 
+        src="/gif/logo/CubesShufflingGIF.gif" 
         alt="Commune Logo" 
         className='block lg:hidden' 
+        width={50}
+        height={50}
       />
       <div 
         className="
@@ -348,7 +350,7 @@ export default function HomepageHeader() {
             </svg>
           </div>
           <div className='hidden lg:block w-full lg:w-1/2 h-full lg:-mr-44 '>
-            <img src="gif/logo/commune.gif" alt="Commune Logo" className='' />
+            <Image src="/gif/logo/commune.gif" width={50} height={50} alt="Commune Logo" className='' />
           </div>
         </div>
       </div>
@@ -439,6 +441,8 @@ export default function HomepageHeader() {
                                   {chain.iconUrl && (
                                     <Image
                                       alt={chain.name ?? 'Chain icon'}
+                                      width={50}
+                                      height={50}
                                       src={chain.iconUrl}
                                       style={{ width: 12, height: 12 }}
                                     />

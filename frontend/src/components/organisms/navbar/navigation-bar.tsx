@@ -201,10 +201,12 @@ export default function NavigationBar() {
 								<div className="flex h-16 items-center justify-between">
 									<div className="flex items-center">
 										<Link className={classes.brand} href="/">
-											<img
+											<Image
 												style={{ width: "auto", height: "4rem", marginRight: "-0.25rem" }}
 												src="/svg/commune.svg"
 												alt="Commune Logo"
+												width={64}
+												height={64}
 											/>
 										</Link>
 										<div className="hidden xl:block">
